@@ -72,7 +72,7 @@ async function findDailyWinner() {
           // Capture the 1-3 digit score following the entry marker
           const match = message.content.match(ENTRY_REGEX);
           if (match) {
-            console.log(`Found entry from ${message.author.tag}: ${match[1]}`);
+            // console.log(`Found entry from ${message.author.tag}: ${match[1]}`);
             const score = Number(match[1]);
 
             if (score > highestScore) {

@@ -20,7 +20,7 @@ client.once('ready', () => {
   console.log(`Logged in as ${client.user.tag}! Waiting for 9:00 AM...`);
 
   // Schedule task to run at 9:00 AM every day
-  cron.schedule('00 09 * * *', () => {
+  cron.schedule('00 17 * * *', () => {
     findDailyWinner();
   });
 });
